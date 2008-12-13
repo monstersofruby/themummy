@@ -1,0 +1,23 @@
+ form_for @link do |f| 
+text(error_messages_for :link)
+
+p do
+  text(f.label :title)
+
+  text(f.text_field :title)
+
+end
+p do
+  text(f.label :url)
+
+  text(f.text_field :url)
+
+end
+p do
+  text(f.label :description)
+
+  text(f.text_area :description)
+
+end
+p "#{ submit_tag \"OK\" }"
+ end 

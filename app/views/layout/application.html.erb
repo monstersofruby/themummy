@@ -1,12 +1,113 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html>
   <head>
-    <title>Fresh Merb App</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <link rel="stylesheet" href="/stylesheets/master.css" type="text/css" media="screen" charset="utf-8" />
+    <title>The Mummy Links</title>
+    <link href="/stylesheets/master.css" media="screen" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <div id="logo">
+      <img src="/images/the-mummy.jpg" alt="The Mummy
+" />
+    </div>
+    <div id="main">
+      <h1>The Mummy Links</h1>
+
     <%#= message[:notice] %>
     <%= catch_content :for_layout %>
+
+      <span id="navigation">
+        <a href="/">Portada</a> | <a href="/links/new">Añadir enlace</a>
+      </span>
+      <div class="link" id="link_4">
+  <div class="votes">
+    53
+    <form action="/links/4/votes" method="post" onsubmit="new Ajax.Request('/links/4/votes', {asynchronous:true, evalScripts:true, method:'post', parameters:Form.serialize(this)}); return false;"><div style="margin:0;padding:0"><input name="authenticity_token" type="hidden" value="fbf06ac9d39b949795e4a74771bff1f1696f9043" /></div>
+
+      <input src="/images/vota.gif?1229191286" type="image" />
+    </form>
+  </div>
+  <div class="details">
+    <h2><a href="/links/4">BeBanjo</a></h2>
+    <p>URL: <a href="/links">http://www.bebanjo.com</a></p>
+    <p>Es la hostia</p>
+
+  </div>
+  <div style="clear:both"></div>
+</div><div class="link" id="link_1">
+  <div class="votes">
+    41
+    <form action="/links/1/votes" method="post" onsubmit="new Ajax.Request('/links/1/votes', {asynchronous:true, evalScripts:true, method:'post', parameters:Form.serialize(this)}); return false;"><div style="margin:0;padding:0"><input name="authenticity_token" type="hidden" value="fbf06ac9d39b949795e4a74771bff1f1696f9043" /></div>
+      <input src="/images/vota.gif?1229191286" type="image" />
+    </form>
+  </div>
+  <div class="details">
+
+    <h2><a href="/links/1">Google</a></h2>
+    <p>URL: <a href="/links">http://www.google.com/</a></p>
+    <p>Sirve para buscar</p>
+  </div>
+  <div style="clear:both"></div>
+</div><div class="link" id="link_6">
+  <div class="votes">
+
+    9
+    <form action="/links/6/votes" method="post" onsubmit="new Ajax.Request('/links/6/votes', {asynchronous:true, evalScripts:true, method:'post', parameters:Form.serialize(this)}); return false;"><div style="margin:0;padding:0"><input name="authenticity_token" type="hidden" value="fbf06ac9d39b949795e4a74771bff1f1696f9043" /></div>
+      <input src="/images/vota.gif?1229191286" type="image" />
+    </form>
+  </div>
+  <div class="details">
+    <h2><a href="/links/6">jobandtalent</a></h2>
+    <p>URL: <a href="/links">http://www.jobandtalent.com</a></p>
+
+    <p>Where monsters meet at night
+</p>
+  </div>
+  <div style="clear:both"></div>
+</div><div class="link" id="link_5">
+  <div class="votes">
+    6
+    <form action="/links/5/votes" method="post" onsubmit="new Ajax.Request('/links/5/votes', {asynchronous:true, evalScripts:true, method:'post', parameters:Form.serialize(this)}); return false;"><div style="margin:0;padding:0"><input name="authenticity_token" type="hidden" value="fbf06ac9d39b949795e4a74771bff1f1696f9043" /></div>
+      <input src="/images/vota.gif?1229191286" type="image" />
+    </form>
+
+  </div>
+  <div class="details">
+    <h2><a href="/links/5">Backpack</a></h2>
+    <p>URL: <a href="/links">http://backpackit.com</a></p>
+    <p>Another collaboration site</p>
+  </div>
+  <div style="clear:both"></div>
+
+</div><div class="link" id="link_2">
+  <div class="votes">
+    0
+    <form action="/links/2/votes" method="post" onsubmit="new Ajax.Request('/links/2/votes', {asynchronous:true, evalScripts:true, method:'post', parameters:Form.serialize(this)}); return false;"><div style="margin:0;padding:0"><input name="authenticity_token" type="hidden" value="fbf06ac9d39b949795e4a74771bff1f1696f9043" /></div>
+      <input src="/images/vota.gif?1229191286" type="image" />
+    </form>
+  </div>
+  <div class="details">
+    <h2><a href="/links/2">sdfsdfsdfdsf</a></h2>
+
+    <p>URL: <a href="/links">sdfsdfsdfsf</a></p>
+    <p></p>
+  </div>
+  <div style="clear:both"></div>
+</div><div class="link" id="link_3">
+  <div class="votes">
+    0
+    <form action="/links/3/votes" method="post" onsubmit="new Ajax.Request('/links/3/votes', {asynchronous:true, evalScripts:true, method:'post', parameters:Form.serialize(this)}); return false;"><div style="margin:0;padding:0"><input name="authenticity_token" type="hidden" value="fbf06ac9d39b949795e4a74771bff1f1696f9043" /></div>
+      <input src="/images/vota.gif?1229191286" type="image" />
+
+    </form>
+  </div>
+  <div class="details">
+    <h2><a href="/links/3">sdfsdfsdfdsf</a></h2>
+    <p>URL: <a href="/links">http://wadus</a></p>
+    <p></p>
+  </div>
+
+  <div style="clear:both"></div>
+</div>
+
+    </div>
   </body>
 </html>

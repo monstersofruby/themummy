@@ -27,8 +27,13 @@
 
 Merb.logger.info("Compiling routes...")
 Merb::Router.prepare do
+  resources :comments
+  resources :votes
+  resources :links
   # RESTful routes
   # resources :posts
+
+  resources :links, :votes, :comments
 
   # This is the default route for /:controller/:action/:id
   # This is fine for most cases.  If you're heavily using resource-based
@@ -37,5 +42,5 @@ Merb::Router.prepare do
   default_routes
   
   # Change this for your home page to be available at /
-  # match('/').to(:controller => 'whatever', :action =>'index')
+  match('/').to(:controller => 'links', :action =>'index')
 end
