@@ -6,7 +6,7 @@
  
 # require "lib/merb_markaby"
  
-# use_orm :none
+use_orm :relaxdb
 use_test :rspec
 use_template_engine :markaby
  
