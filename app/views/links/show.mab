@@ -1,0 +1,29 @@
+text(render :partial => 'links/link', :object => @link)
+
+div :class => 'comments' do
+  h3 "Comentarios"
+   @link.comments.each do |comment| 
+     div_for comment do 
+      p "<strong>#{ comment.author }" text "dijo: "em "#{ comment.body }"end
+     end 
+   end 
+   form_for [@link, @comment] do |f| 
+    text(error_messages_for :comment)
+
+    h3 dotext "Opina sobre este link:"h3 do
+    p do
+      text(f.text_area :body)
+
+    end
+    p do
+      text(f.label :author, "Autor")
+
+      text(f.text_field :author)
+
+    end
+    p do
+      text(submit_tag "Opina")
+
+    end
+   end 
+end
