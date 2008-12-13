@@ -41,7 +41,7 @@ module Markaby
   end
 end
 
-Dir['*.rhtml'].each do |input|  
+Dir['*.html.erb'].each do |input|  
   output = input.sub(/\.(.+?)\Z/, '.mab')
   File.open(output, 'w+') do |out|
     puts "=> Converting #{input} to #{output}"
