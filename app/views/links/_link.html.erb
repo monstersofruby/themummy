@@ -1,0 +1,14 @@
+<% div_for link do %>
+  <div class="votes">
+    <%= link.votes %>
+    <% form_remote_tag :url => link_votes_path(link), :method => :post do |f| %>
+      <%= image_submit_tag "vota.gif" %>
+    <% end %>
+  </div>
+  <div class="details">
+    <h2><%= link_to link.title, link %></h2>
+    <p>URL: <%= link_to link.url %></p>
+    <p><%= link.description %></p>
+  </div>
+  <div style="clear:both"></div>
+<% end %>
