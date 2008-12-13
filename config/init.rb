@@ -1,9 +1,10 @@
 # Go to http://wiki.merbivore.com/pages/init-rb
  
 # Specify a specific version of a dependency
-# dependency "RedCloth", "> 3.0"
 
-require "lib/merb_markaby"
+ # dependency "flype-merb_markaby"
+
+# require "lib/merb_markaby"
 
 #  use_orm :none
 use_test :rspec
