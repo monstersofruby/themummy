@@ -1,0 +1,23 @@
+<%= render :partial => 'links/link', :object => @link %>
+<div class="comments">
+  <h3>Comentarios</h3>
+  <% @link.comments.each do |comment| %>
+    <% div_for comment do %>
+      <p><strong><%= comment.author %></strong> dijo: <em><%= comment.body %></em></p>
+    <% end %>
+  <% end %>
+  <% form_for [@link, @comment] do |f| %>
+    <%= error_messages_for :comment %>
+    <h3>Opina sobre este link:<h3>
+    <p>
+      <%= f.text_area :body %>
+    </p>
+    <p>
+      <%= f.label :author, "Autor" %>
+      <%= f.text_field :author %>
+    </p>
+    <p>
+      <%= submit_tag "Opina" %>
+    </p>
+  <% end %>
+</div>
