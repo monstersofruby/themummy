@@ -27,6 +27,7 @@
 
 Merb.logger.info("Compiling routes...")
 Merb::Router.prepare do
+  resources :comments
   resources :votes
   resources :links
   # RESTful routes
