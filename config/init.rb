@@ -3,9 +3,11 @@
 # Specify a specific version of a dependency
 # dependency "RedCloth", "> 3.0"
 
+require "lib/merb_markaby"
+
 #  use_orm :none
 use_test :rspec
-use_template_engine :erb
+use_template_engine :markaby
  
 Merb::Config.use do |c|
   c[:use_mutex] = false
