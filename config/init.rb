@@ -8,7 +8,7 @@
  
 use_orm :relaxdb #make sure your gem is called relaxdb in your machine
 use_test :rspec
-use_template_engine :markaby
+#use_template_engine :markaby
  
 Merb::Config.use do |c|
   c[:use_mutex] = false
