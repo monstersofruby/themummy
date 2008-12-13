@@ -2,13 +2,9 @@
  
 # Specify a specific version of a dependency
 
- # dependency "flype-merb_markaby"
-
-# require "lib/merb_markaby"
-
 #  use_orm :none
 use_test :rspec
-use_template_engine :markaby
+use_template_engine :erb
  
 Merb::Config.use do |c|
   c[:use_mutex] = false
