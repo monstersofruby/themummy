@@ -36,19 +36,3 @@ end
 When /^I attach the file at "(.*)" to "(.*)" $/ do |path, field|
   attach_file(field, path)
 end
-
-Then /^I should see "(.*)"$/ do |text|
-  response.body.should =~ /#{text}/m
-end
-
-Then /^I should not see "(.*)"$/ do |text|
-  response.body.should_not =~ /#{text}/m
-end
-
-Then /^the "(.*)" checkbox should be checked$/ do |label|
-  field_labeled(label).should be_checked
-end
-
-When /^I should be redirect to (.*)$/ do |url|
-  assert response.request.path == url
-end
