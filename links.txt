@@ -1,0 +1,5 @@
+Merb
+	http://dev.strawberrydiva.com/relax_with_merb_and_couchdb/
+	
+CouchDB:
+	http://upstream-berlin.com/2008/09/25/a-couchdb-primer-for-an-activerecord-mindset/
